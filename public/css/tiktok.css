@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+:root {
+  --magenta : rgba(238, 29, 82, 0.9);
+  --cyan : rgb(105, 201, 208);
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* put the colors in CSS variables */
+  --ttmagenta: rgba(238, 29, 82, 0.8);
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+button .continue {
+  background-color: var(--ttmagenta);
+  color: white;
+  font-family: sans-serif;
+  width: 100px;
+  height: 45px; 
+  border-radius: 10px;
+  margin: 10px;
+}
+
+div.video {
+  width: 325px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: var(--ttmagenta);
+}
+
+blockquote {
+  border-style: solid;
+  border-color:  var(--ttmagenta);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color:var(--ttmagenta);
+}
+
+iframe {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+h1 {
+    font-size: 48px;
+    font-family: "Boogaloo";
+}
+.icon{
+  transform:rotateY(180deg) rotate(-45deg);
+  color:#EE1D52;
+  cursor:pointer;
+  margin-top:20px; 
+}
+
+.continue {
+   width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(--magenta);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;	
+	position:absolute;
+	right:5%;
+bottom:-22.5%;
+	
+}
+
+.continue:hover {
+    background-color: var(--cyan);
+}
+
+#reload{
+    background-color: #ffffff00;
+  }
+@media screen and (max-width:768px) {
+
+.continue{
+    position:unset;
+    margin-top: 30px;
+}
+}
